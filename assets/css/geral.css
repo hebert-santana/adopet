@@ -1,0 +1,147 @@
+:root {
+    --background-principal: #E5E5E5;
+    --branco: #FFFFFF;
+    --azul-principal: #3772FF;
+    --verde-principal: #36D6AD;
+    --coral-principal: #FC7071;
+    --creme-principal: #FCF0E3;
+    --cinza-principal: #737380;
+    --cinza-claro: #BCBCBC;
+    --cinza-claro-bg: #F6F6F6;
+    --font-poppins:'Poppins', sans-serif;
+    --font-ibm: 'IBM Plex Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
+}
+
+h3 {
+    color: var(--branco);
+    font-family: var(--font-ibm);
+}
+
+p {
+    color: var(--branco);
+    font-family: var(--font-poppins);
+}
+
+body {
+    background-color: var(--azul-principal);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 168px;
+    margin-bottom: 24px;
+}
+
+.site_logo {
+    width: 186px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.paragrafo {
+    display: flex;
+    justify-content: center;
+
+        margin-top: 16px;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 24px;
+        /* espaço entre parágrafos */
+}
+
+.paragrafo__conteudo {
+    margin-left: 56px;
+    margin-right: 56px;
+    text-align: center;
+}
+
+
+
+/* BOTOES (inserir combreamento) */
+
+
+.btn_cadastrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    color: var(--branco);
+    background-color: var(--coral-principal);
+    width: 180px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.btn_cadastrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    color: var(--branco);
+    background-color: var(--coral-principal);
+    width: 180px;
+    height: 40px;
+    border-radius: 6px;
+    
+}
+
+.btn_cadastrar a {
+    padding: 8px 29px 8px 29px;
+}
+
+.btn_cadastrado a {
+    padding: 8px 8px 8px 8px;
+}
+
+
+/* IMAGEM */
+
+.imagem_catdog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 213px;
+}
+
+.rodape {
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    color: var(--branco);
+    height: 104px; /* do figma */
+
+    display: flex;
+    align-items: center; /* centralizei verticalmente */
+    justify-content: center; /* centralizei horizontalmente */
+}
