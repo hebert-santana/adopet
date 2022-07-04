@@ -1,2 +1,4 @@
 # adopet
- Challenge frontend da Alura
+Adopet - Projeto do quarto Challenge frontend da escola Alura.
+
+
