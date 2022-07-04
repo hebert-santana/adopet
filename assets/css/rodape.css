@@ -1,6 +1,12 @@
 footer {
+    align-items: center; /* alinhamento vertical */
     background-color: var(--verde-principal);
-    width: 100%;
-    height: 104px;
-    text-align: center;
+    color: var(--branco);
+    display: flex;
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    font-weight: 400;
+    height: 100px;
+    justify-content: center; /* alinhamento horizontal */
+    line-height: 24px;
 }

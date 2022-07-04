@@ -14,134 +14,106 @@
 
 }
 
-h3 {
-    color: var(--branco);
-    font-family: var(--font-ibm);
-}
+/* GERAIS */
 
-p {
-    color: var(--branco);
-    font-family: var(--font-poppins);
-}
-
-body {
+.inicial {
+    background-image: url(../img/vetor-1.svg);
+    background-repeat: no-repeat;
+    background-size: 95vw;
     background-color: var(--azul-principal);
+    margin: 0;
+    padding: 0;
+}
+
+.inicial__header {
+    align-items: center;
+    display: flex;
+    height: 10em;
+    justify-content: space-around;
+    margin-left: 1.5em;
+    width: 40vw;
+}
+
+.inicial__header-nav .home-logo {
+    background: black;
+    border: 1px solid white;
+}
+
+.inicial__header-nav .contato-logo {
+    background: black;
+    border: 1px solid white;
+}
+
+.inicial__logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.inicial__conteudo {
+    align-items: center;
+    background-image: url(../img/vetor-2.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    color: var(--branco);
     display: flex;
     flex-direction: column;
-    
+    height: 25em;
+    padding:auto;
+    width: 100vw;
 }
 
-.container {
-	width: 100%;
-	margin: 0 auto;
-}
-
-.conteudo {
-    display: flex;
-    justify-content: center;
-    margin-top: 168px;
-    margin-bottom: 24px;
-}
-
-.site_logo {
-    width: 186px;
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 26px;
+.inicial__conteudo h3 {
+    font-family: var(--font-ibm);
     font-weight: 500;
-    line-height: 48px;
+    font-size: 26px;
+    line-height: 24px;
 }
 
-.paragrafo {
-    display: flex;
-    justify-content: center;
-
-        margin-top: 16px;
-        font-size: 16px;
-        font-style: normal;
-        line-height: 24px;
-        /* espaço entre parágrafos */
-}
-
-.paragrafo__conteudo {
-    margin-left: 56px;
-    margin-right: 56px;
+.inicial__conteudo p {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
 }
 
 
-
 /* BOTOES (inserir combreamento) */
 
-
-.btn_cadastrar {
-    display: flex;
-    justify-content: center;
+.inicial__conteudo-btn {
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 24px;
-
-    font-family: var(--font-poppins);
-    font-size: 16px;
-    color: var(--branco);
-    background-color: var(--coral-principal);
-    width: 180px;
-    height: 40px;
-    border-radius: 6px;
-}
-
-.btn_cadastrado {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    margin-top: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    height: 7em;
+    justify-content: space-between;
+    margin: 8px auto;
+    width: 50vw;
+}
 
-    font-family: var(--font-poppins);
-    font-size: 16px;
-    color: var(--branco);
+.inicial__conteudo-btn a {
     background-color: var(--coral-principal);
-    width: 180px;
-    height: 40px;
+    border: black;
     border-radius: 6px;
-    
-}
-
-.btn_cadastrar a {
-    padding: 8px 29px 8px 29px;
-}
-
-.btn_cadastrado a {
-    padding: 8px 8px 8px 8px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    color: var(--branco);
+    font-size: 16px ;
+    font-weight: 600;
+    height: 40px;
+    line-height: 24px;
+    text-align: center;
+    width: 180px;    
 }
 
 
 /* IMAGEM */
 
 .imagem_catdog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 213px;
+    width: 100vw;
+    background-image: url(../img/ilustracao-catdog.svg);
+    background-repeat: no-repeat;
+    background-position-y: 4vh;
+    background-position-x: center;
+    height: 20em;
 }
 
-.rodape {
-    font-family: var(--font-poppins);
-    font-size: 16px;
-    color: var(--branco);
-    height: 104px; /* do figma */
-
-    display: flex;
-    align-items: center; /* centralizei verticalmente */
-    justify-content: center; /* centralizei horizontalmente */
-}
