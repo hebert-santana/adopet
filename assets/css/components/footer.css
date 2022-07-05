@@ -8,6 +8,7 @@
 
     text-align: center;
     color: white;
+    margin-top: 0px; /* corrigindo posição do footer */
 }
 
 .footer p {
