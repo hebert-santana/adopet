@@ -1,0 +1,18 @@
+.header{
+    height: 100px;
+    width: 80%;
+    margin: 20px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-item{
+    width: 19.2px;
+    margin-right: 50px;
+}
+
+.header__perfil-item{
+    width: 40px;
+    display: none;
+}

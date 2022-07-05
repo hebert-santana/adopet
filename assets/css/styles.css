@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --azul: #3772FF;
+    --cinza:#737380;
+    --cinza-bg: #F6F6F6;
+    --cinza-claro: #BCBCBC;
+    --coral: #FC7071;
+    --creme: #FCF0E3;
+    --verde: #36D6AD;
+    
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 72px;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+}

@@ -1,0 +1,57 @@
+body {
+    background-color: var(--azul);
+
+    background-image: url(../img/vetor-1.svg);
+    background-position: top 0 left;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-image: url(../img/vetor-2.svg);
+    background-position: top 5rem right;
+    background-repeat: no-repeat;
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main p {
+    width: 70%;
+}
+
+.main__logo {
+    text-align: center;
+    height: 2.875rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.main h3 {
+    text-align: center;
+    color: var(--cinza-bg);
+    margin-bottom: 1.5rem;
+}
+
+.main p {
+    text-align: center;
+    color: var(--cinza-bg);
+}
+
+
+.main__container-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.7rem auto;
+}
+
+.main__ilustracao {
+    max-width: 250px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: -1.5rem;
+}

@@ -1,0 +1,50 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--Cinza);
+
+    width: 90%;
+
+    margin: 1rem auto;
+}
+
+.form p{
+    text-align: right;
+    font-size: .75rem;
+    color: red;
+}
+
+.error{
+    display: none;
+}
+
+.form-input{
+    background-color: var(--cinza-bg);
+    border-radius: 5px;
+    font-size: .8rem;
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.form-btn{
+    margin: 1rem auto;
+}
+
+.form-password{
+    width: 95%;
+    position: relative;
+}
+
+.form-password input{
+    width: 100%;
+}
+
+.form-password img{
+    position: absolute;
+    top: .2rem;
+    right: 0;
+    cursor: pointer;
+}
