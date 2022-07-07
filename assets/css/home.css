@@ -1,14 +1,22 @@
 body {
     background-color: var(--azul);
-    background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg), url(../img/ilustracao-catdog.svg);
-    background-position: top left, bottom right, bottom center;
+    background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+    background-position: top left, center right;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 main {
     margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
     text-align: center;             /*terminou de centralizar o conteúdo */
     color: var(--branco);
+    background-image: url(../img/ilustracao-catdog.svg);
+    background-position: bottom center;
+    background-position-y: 21.5rem;
+    background-repeat: no-repeat;
+    flex-grow: 1;
 }
 
 .logo-img {

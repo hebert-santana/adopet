@@ -1,14 +1,25 @@
 body {
     background-color: var(--branco);
-    background-image: url(../img/patas.svg), url(../img/vetor-1.svg), url(../img/vetor-3.svg);
-    background-position: top right, top left, bottom left;
+    background-image: url(../img/patas.svg), url(../img/vetor-1.svg);
+    background-position: top right, top left;
     background-repeat: no-repeat;
+
+    display:flex; 
+    flex-direction: column; 
+    min-height: 100vh;
 }
 
 main {
     margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
     text-align: center;             /*terminou de centralizar o conteúdo */
     color: var(--azul);
+
+    background-image: url(../img/vetor-3.svg);
+    background-size: 20%;
+    background-position: center left;
+    background-repeat: no-repeat;
+
+    flex-grow: 1;
 }
 
 .logo-img {
@@ -59,4 +70,16 @@ input[type=submit] {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
+}
+
+.rodape {
+    display: flex;
+    height: 6.5rem;
+    background-color: var(--verde);
+    color: var(--branco);
+    justify-content: center;
+}
+
+.rodape__texto {
+    align-self: center;
 }
