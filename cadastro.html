@@ -5,47 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="./assets/css/components/botoes.css">
     <link rel="stylesheet" href="./assets/css/components/header.css">
     <link rel="stylesheet" href="./assets/css/components/footer.css">
-    <title>Adopet | Home</title>
+    <title>Adopet | cadastro</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#" class="header__nav-item">
+        <nav class="cabecalho">
+            <a href="#" class="cabecalho__item">
                 <img src="./assets/img/home.svg" alt="Home Page">
             </a>
-            <a href="#" class="header__nav-item">
+            <a href="#" class="cabecalho__item">
                 <img src="./assets/img/contato.svg" alt="Contato Page">
             </a>
         </nav>
-        <div>
-            <a href="#" class="header__perfil-item">
-                <img src="./assets/img/usuario.png" alt="minha conta de usuário">
-            </a>
-        </div>
     </header>
     <!-- CONTEÚDO -->
-    <!-- <main>
+    <main>
         <div>
-            <img src="./assets/img/logo.svg" alt="Logo da Adopet">
-            <h3>Boas-vindas!</h3>
-            <p>Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
-            <div>
-                <a href="#" class="botoes">Já tenho conta</a>
-                <a href="./pages/cadastro.html" class="botoes">Quero me Cadastrar</a>
-            </div>
-        </div>
+            <img src="./assets/img/logo-azul.svg" alt="Logo da Adopet" class="logo-img">
+            <p class="paragrafo">Ainda não tem cadastro?</p>
+            <p class="paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            <form action="#">
+                <label for="email">Email</label>
+                <input type="email" class="caixa email" name="email" placeholder="Escolha seu melhor email">
+            
+                <label for="nome">Nome</label>
+                <input type="text" class="caixa nome" name="nome" placeholder="Digite seu nome completo">
+            
+                <label for="senha">Senha</label>
+                <input type="password" class="caixa senha" name="senha" value="secret" placeholder="Crie uma senha">
 
-        <img src="./assets/img/ilustracao-catdog.svg" alt="Ilustração de um cachorro e um gato" class="ilustra-cao-gato">
+                <label for="senha-confirme">Confirma sua senha</label>
+                <input type="password" class="caixa senha" name="senha-confirme" value="secret" placeholder="Repita a senha criada acima">
+
+                <input class="cadastrar" type="submit" value="Cadastrar">
+            </form>
+        </div>
     </main>
 
-    <footer class="cabecalho">
-        <p class="cabecalho__texto">2022 - Desenvolvido por <a href="https://www.linkedin.com/in/hebert-santana/">Hebert Santana</a>.</p>
+    <!-- <footer class="rodape">
+        <p class="rodape__texto">2022 - Desenvolvido por <a href="https://www.linkedin.com/in/hebert-santana/">Hebert Santana</a>.</p>
     </footer> -->
 </body>
 </html>

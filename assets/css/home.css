@@ -1,13 +1,13 @@
 body {
     background-color: var(--azul);
     background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg), url(../img/ilustracao-catdog.svg);
-    background-position: top left, center right, bottom center;
+    background-position: top left, bottom right, bottom center;
     background-repeat: no-repeat;
 }
 
 main {
-    margin: 6.5rem auto 0 auto;  /* margem esquerda e direita auto */
-    text-align: center;     /*terminou de centralizar o conteúdo */
+    margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
+    text-align: center;             /*terminou de centralizar o conteúdo */
     color: var(--branco);
 }
 
@@ -16,7 +16,7 @@ main {
     margin-bottom: 1.5rem;
 }
 
-#paragrafo {
+.paragrafo {
     margin: 1rem 3.5rem 1.5rem 3.5rem;
 }
 
@@ -43,10 +43,6 @@ main {
     background-color: var(--verde);
     color: var(--branco);
     justify-content: center;
-    
-    width: 100%;
-    bottom: 0;
-    position: fixed;
 }
 
 .rodape__texto {

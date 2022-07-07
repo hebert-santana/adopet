@@ -1,0 +1,62 @@
+body {
+    background-color: var(--branco);
+    background-image: url(../img/patas.svg), url(../img/vetor-1.svg), url(../img/vetor-3.svg);
+    background-position: top right, top left, bottom left;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
+    text-align: center;             /*terminou de centralizar o conteúdo */
+    color: var(--azul);
+}
+
+.logo-img {
+    width: 9rem;
+    margin-bottom: 1.5rem;
+}
+
+.paragrafo {
+    margin: 0 1.5rem;
+}
+
+form {
+    margin: 1.5rem auto 0;
+}
+
+label {
+    color: var(--cinza);
+    font-family: var(--font-principal);
+    font-size: 16px;
+}
+
+input {
+    width: 19.5rem;
+    background-color: var(--cinza-bg);
+    text-align: center;
+    color: var(--cinza-claro);
+    padding: 12px 20px;
+    margin: 0.7rem 0 1.25rem;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+
+    font-family: var(--font-principal);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+input[type=submit] {
+    width: 9.5rem;
+    background-color: var(--coral);
+    text-align: center;
+    color: var(--branco);
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
