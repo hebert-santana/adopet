@@ -1,57 +1,58 @@
 body {
     background-color: var(--azul);
-
-    background-image: url(../img/vetor-1.svg);
-    background-position: top 0 left;
+    background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg), url(../img/ilustracao-catdog.svg);
+    background-position: top left, center right, bottom center;
     background-repeat: no-repeat;
 }
 
 main {
-    background-image: url(../img/vetor-2.svg);
-    background-position: top 5rem right;
-    background-repeat: no-repeat;
+    margin: 6.5rem auto 0 auto;  /* margem esquerda e direita auto */
+    text-align: center;     /*terminou de centralizar o conteúdo */
+    color: var(--branco);
 }
 
-.main {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.main p {
-    width: 70%;
-}
-
-.main__logo {
-    text-align: center;
-    height: 2.875rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-.main h3 {
-    text-align: center;
-    color: var(--cinza-bg);
+.logo-img {
+    width: 11.5rem;
     margin-bottom: 1.5rem;
 }
 
-.main p {
-    text-align: center;
-    color: var(--cinza-bg);
+#paragrafo {
+    margin: 1rem 3.5rem 1.5rem 3.5rem;
 }
 
-
-.main__container-btn {
+.botoes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 1.7rem auto;
+    width: 12rem;
+    margin: 0 auto 0 auto;
 }
 
-.main__ilustracao {
-    max-width: 250px;
-    display: block;
-    margin: 0px auto;
-    margin-bottom: -1.5rem;
+.botoes__btn {
+    margin-bottom: 1rem;
+    background-color: var(--coral);
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: var(--branco);
+    font-weight: 600;
 }
+
+
+.rodape {
+    display: flex;
+    height: 6.5rem;
+    background-color: var(--verde);
+    color: var(--branco);
+    justify-content: center;
+    
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.rodape__texto {
+    align-self: center;
+}
+
+
+
+
