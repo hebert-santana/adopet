@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
     <!-- COMPONENTS -->
-    <link rel="stylesheet" href="./assets/css/components/botoes.css">
     <link rel="stylesheet" href="./assets/css/components/header.css">
-    <link rel="stylesheet" href="./assets/css/components/footer.css">
-    <title>Adopet | Home</title>
+    <title>Adopet | cadastro</title>
 </head>
 
 <body>
@@ -27,13 +25,19 @@
     <!-- CONTEÚDO -->
     <main>
         <div>
-            <img src="./assets/img/logo.svg" alt="Logo da Adopet" class="logo-img">
-            <h3>Boas-vindas!</h3>
-            <p class="paragrafo">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
-            <div class="botoes">
-                <a href="#" class="botoes__btn">Já tenho conta</a>
-                <a href="./pages/cadastro.html" class="botoes__btn">Quero me Cadastrar</a>
-            </div>
+            <img src="./assets/img/logo-azul.svg" alt="Logo da Adopet" class="logo-img">
+            <p class="paragrafo">Ainda não tem cadastro?</p>
+            <p class="paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            <form action="#">
+                <label for="email">Email</label>
+                <input type="email" class="caixa email" name="email" placeholder="Insira seu email">
+            
+                <label for="senha">Senha</label>
+                <input type="password" class="caixa senha-cadastrado" name="senha" value="secret" placeholder="Insira sua senha">
+                <a class="remember">Esqueci minha senha.</a>
+
+                <input class="entrar" type="submit" value="Entrar">
+            </form>
         </div>
     </main>
 

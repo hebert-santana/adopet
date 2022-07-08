@@ -83,3 +83,19 @@ input[type=submit] {
 .rodape__texto {
     align-self: center;
 }
+
+.remember {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-decoration: underline;
+    color: var(--coral);
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+
+}
+
+.senha-cadastrado {
+    margin-bottom: 0.5rem;
+}
