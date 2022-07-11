@@ -19,10 +19,106 @@ body {
     margin-bottom: 1rem;
 }
 
-.um-dog {
+.pets__pet {
     display: flex;
     margin-top: 1rem;
     width: 100%;
     height: 12.25rem;
     background-color: var(--cinza-bg);
+}
+
+.pets__pet-pet {
+    width: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 9rem;
+}
+
+.pets__pet-dunga {
+    background-image: url(../img/pets/dunga.svg);
+}
+
+.pets__pet-felicia {
+    background-image: url(../img/pets/felicia.svg);
+}
+
+.pets__pet-sirius {
+    background-image: url(../img/pets/sirius.svg);
+}
+
+.pets__pet-fiona {
+    background-image: url(../img/pets/fiona.svg);
+}
+
+.pets__pet-sid {
+    background-image: url(../img/pets/sid.svg);
+}
+
+.pets__pet-yoda {
+    background-image: url(../img/pets/yoda.svg);
+}
+
+.pets__pet-lua {
+    background-image: url(../img/pets/lua.svg);
+}
+
+.pets__pet-amora {
+    background-image: url(../img/pets/amora.svg);
+}
+
+.pets__pet-zelda {
+    background-image: url(../img/pets/zelda.svg);
+}
+
+.pets__pet-drescricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.pets__pet-drescricao h1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--azul);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.pets__pet-drescricao ul {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 1.8rem;
+    color: var(--cinza);
+}
+
+.pets__pet-drescricao p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 0.45rem;
+    color: var(--cinza);
+}
+
+.pets__pet-drescricao img {
+    width: 1rem;
+}
+.pets__pet-drescricao a {
+    display: flex;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+span {
+    margin-left: 0.45rem;
+    color: var(--cinza);
 }
