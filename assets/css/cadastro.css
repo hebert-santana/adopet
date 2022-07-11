@@ -72,19 +72,9 @@ input[type=submit] {
     font-weight: 600;
 }
 
-.rodape {
-    display: flex;
-    height: 6.5rem;
-    background-color: var(--verde);
-    color: var(--branco);
-    justify-content: center;
-}
 
-.rodape__texto {
-    align-self: center;
-}
 
-.remember {
+/* .remember {
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -94,7 +84,7 @@ input[type=submit] {
     line-height: 24px;
     font-weight: 400;
 
-}
+} */
 
 .senha-cadastrado {
     margin-bottom: 0.5rem;

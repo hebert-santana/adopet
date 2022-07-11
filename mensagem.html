@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/mensagem.css">
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/footer.css">
+    <title>Adopet | Mensagem</title>
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a href="#" class="cabecalho__item">
+                <img src="./assets/img/home.svg" alt="Home Page">
+            </a>
+            <a href="#" class="cabecalho__item">
+                <img src="./assets/img/contato.svg" alt="Contato Page">
+            </a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO -->
+    <main>
+        <div>
+            <p class="paragrafo">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</p>
+            <div class="formulario">
+            <form action="#">
+                <label for="nome">Nome</label>
+                <input type="text" class="caixa nome" name="nome" placeholder="Insira seu nome completo">
+
+                <label for="telefone">Telefone</label>
+                <input type="number" class="caixa telefone" name="telefone" placeholder="Insira seu telefone e/ou whatsapp">
+
+                <label for="nome-animal">Nome do animal</label>
+                <input type="text" class="caixa nome-animal" name="nome-animal" placeholder="Por qual animal você se interessou?">
+
+                <label for="mensagem">Mensagem</label>
+                <input type="text" id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem">
+
+                <input class="entrar" type="submit" value="Entrar">
+            </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">2022 - Desenvolvido por Alura.</p>
+    </footer>
+</body>
+</html>
