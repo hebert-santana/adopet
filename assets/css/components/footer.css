@@ -2,20 +2,13 @@
     width: 100%;
     height: 6.5rem;
     background-color: var(--verde);
-    
+    display: flex;    
 }
 
 .rodape__texto {
     color: var(--branco);
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0px;
-    text-align: center;
-
-    position: relative;
-    top: 45%; 
-}
-
-a {
-    color: var(--azul);
+    letter-spacing: 0px;    
+    margin: auto;
 }
