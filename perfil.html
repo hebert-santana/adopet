@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,20 @@
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="./assets/css/components/header.css">
     <link rel="stylesheet" href="./assets/css/components/footer.css">
-    <title>Adopet | Mensagem</title>
+    <title>Adopet | Perfil</title>
 </head>
 
 <body>
     <header>
         <nav class="cabecalho">
-            <a href="#" class="cabecalho__item">
+            <a href="./home-bemvindo.html" class="cabecalho__item">
                 <img src="./assets/img/home.svg" alt="Home Page">
             </a>
-            <a href="#" class="cabecalho__item">
+            <a href="./mensagem.html" class="cabecalho__item">
                 <img src="./assets/img/contato.svg" alt="Contato Page">
             </a>
+            <a href="perfil.html" class="cabecalho__item cabecalho__item--perfil"><img class="cabecalho__item-img" src="./assets/img/meu-usuario.png"
+                    alt="meu perfil"></a>
         </nav>
     </header>
     <!-- CONTEÚDO -->
@@ -28,24 +31,25 @@
         <div>
             <p class="paragrafo">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
             <div class="formulario">
-            <form action="#">
-                <p class="perfil">Perfil</p>
+                <form action="#">
+                    <p class="perfil">Perfil</p>
 
 
-                <label for="nome">Nome</label>
-                <input type="text" class="caixa nome" name="nome" placeholder="Hebert Santana">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="caixa nome" name="nome" placeholder="Hebert Santana">
 
-                <label for="telefone">Telefone</label>
-                <input type="number" class="caixa telefone" name="telefone" placeholder="55 37 XXXXX-XXXX">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" class="caixa telefone" name="telefone" placeholder="55 37 XXXXX-XXXX">
 
-                <label for="cidade">Cidade</label>
-                <input type="text" class="caixa cidade" name="cidade" placeholder="Divinópolis">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="caixa cidade" name="cidade" placeholder="Divinópolis">
 
-                <label for="mensagem">Sobre</label>
-                <input type="text" id="mensagem" name="mensagem" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.">
+                    <label for="mensagem">Sobre</label>
+                    <input type="text" id="mensagem" name="mensagem"
+                        placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.">
 
-                <input class="salvar" type="submit" value="Salvar">
-            </form>
+                    <input class="salvar" type="submit" value="Salvar">
+                </form>
             </div>
         </div>
     </main>
@@ -54,4 +58,5 @@
         <p class="rodape__texto">2022 - Desenvolvido por Alura.</p>
     </footer>
 </body>
+
 </html>
