@@ -93,6 +93,12 @@ input[type=submit] {
     width: 100%;
     min-height: 10.75rem;
     text-align: left;
+    color: var(--cinza);
+    font-family: var(--font-principal);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0.75rem;
 }
 
 .rodape {
