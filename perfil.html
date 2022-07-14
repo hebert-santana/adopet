@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/perfil.css">
     <!-- COMPONENTS -->
-    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/header-dois.css">
     <link rel="stylesheet" href="./assets/css/components/footer.css">
     <title>Adopet | Perfil</title>
 </head>
@@ -16,14 +16,18 @@
 <body>
     <header>
         <nav class="cabecalho">
-            <a href="./home-bemvindo.html" class="cabecalho__item">
-                <img src="./assets/img/home.svg" alt="Home Page">
-            </a>
-            <a href="./mensagem.html" class="cabecalho__item">
-                <img src="./assets/img/contato.svg" alt="Contato Page">
-            </a>
-            <a href="perfil.html" class="cabecalho__item cabecalho__item--perfil"><img class="cabecalho__item-img" src="./assets/img/meu-usuario.png"
-                    alt="meu perfil"></a>
+            <div class="esquerda"> <a href="./home-bemvindo.html" class="cabecalho__item">
+                    <img src="./assets/img/home.svg" alt="Home Page">
+                </a>
+                <a href="./mensagem.html" class="cabecalho__item">
+                    <img src="./assets/img/contato.svg" alt="Contato Page">
+                </a>
+            </div>
+            <div class="direita">
+                <a href="perfil.html" class="cabecalho__item">
+                    <img class="cabecalho__item-img" src="./assets/img/meu-usuario.png" alt="meu perfil">
+                </a>
+            </div>
         </nav>
     </header>
     <!-- CONTEÚDO -->
@@ -44,9 +48,13 @@
                     <label for="cidade">Cidade</label>
                     <input type="text" class="caixa cidade" name="cidade" placeholder="Divinópolis">
 
-                    <label for="mensagem">Sobre</label>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"
+                        cols="50">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.</textarea>
+
+                    <!-- <label for="mensagem">Sobre</label>
                     <input type="text" id="mensagem" name="mensagem"
-                        placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.">
+                        placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."> -->
 
                     <input class="salvar" type="submit" value="Salvar">
                 </form>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/mensagem.css">
     <!-- COMPONENTS -->
-    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/header-dois.css">
     <link rel="stylesheet" href="./assets/css/components/footer.css">
     <title>Adopet | Mensagem</title>
 </head>
@@ -15,14 +15,18 @@
 <body>
     <header>
         <nav class="cabecalho">
-            <a href="#" class="cabecalho__item">
-                <img src="./assets/img/home.svg" alt="Home Page">
-            </a>
-            <a href="#" class="cabecalho__item">
-                <img src="./assets/img/contato.svg" alt="Contato Page">
-            </a>
-            <a href="perfil.html" class="cabecalho__item cabecalho__item--perfil"><img class="cabecalho__item-img" src="./assets/img/meu-usuario.png"
-                alt="meu perfil"></a>
+            <div class="esquerda"> <a href="./home-bemvindo.html" class="cabecalho__item">
+                    <img src="./assets/img/home.svg" alt="Home Page">
+                </a>
+                <a href="./mensagem.html" class="cabecalho__item">
+                    <img src="./assets/img/contato.svg" alt="Contato Page">
+                </a>
+            </div>
+            <div class="direita">
+                <a href="perfil.html" class="cabecalho__item">
+                    <img class="cabecalho__item-img" src="./assets/img/meu-usuario.png" alt="meu perfil">
+                </a>
+            </div>
         </nav>
     </header>
     <!-- CONTEÚDO -->
@@ -41,7 +45,10 @@
                 <input type="text" class="caixa nome-animal" name="nome-animal" placeholder="Por qual animal você se interessou?">
 
                 <label for="mensagem">Mensagem</label>
-                <input type="text" id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem">
+  <textarea id="mensagem" name="mensagem" rows="4" cols="50">Escreva a sua mensagem...</textarea>
+
+                <!-- <label for="mensagem">Mensagem</label>
+                <input type="text" id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem"> -->
 
                 <input class="entrar" type="submit" value="Entrar">
             </form>

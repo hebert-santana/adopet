@@ -3,14 +3,17 @@ body {
     background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
     background-position: top left, center right;
     background-repeat: no-repeat;
+
     display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
-    margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
-    text-align: center;             /*terminou de centralizar o conteúdo */
+    margin: 6.5rem auto 0 auto;
+    /* margem esquerda e direita auto */
+    text-align: center;
+    /*terminou de centralizar o conteúdo */
     color: var(--branco);
     background-image: url(../img/ilustracao-catdog.svg);
     background-position: bottom center;
@@ -43,20 +46,5 @@ main {
     color: var(--branco);
     font-weight: 600;
 }
-
-
-.rodape {
-    display: flex;
-    height: 6.5rem;
-    background-color: var(--verde);
-    color: var(--branco);
-    justify-content: center;
-}
-
-.rodape__texto {
-    align-self: center;
-}
-
-
 
 

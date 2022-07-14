@@ -1,0 +1,17 @@
+.cabecalho {
+    margin: 3rem 2.5rem 0 3rem;
+    display: flex;
+}
+
+.esquerda {
+    margin: auto 2.2rem auto 0;
+    display: flex;
+}
+
+.cabecalho__item {
+    margin: auto 4rem auto 0;
+}
+
+.cabecalho__item-img {
+    width: 2.5rem;
+}
