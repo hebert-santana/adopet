@@ -1,119 +1,141 @@
 body {
     background-color: var(--azul);
-    background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
-    background-position: top left, center right;
+    background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg), url(../img/ilustracao-catdog.svg);
+    background-position: top left, center right, bottom center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
+.cabecalho__item--logo {
+    display: none;
+}
 main {
     margin: 6.5rem auto 0 auto;
-    /* margem esquerda e direita auto */
     text-align: center;
-    /*terminou de centralizar o conteúdo */
     color: var(--branco);
-    background-image: url(../img/ilustracao-catdog.svg);
-    background-position: bottom center;
-    background-position-y: 21.5rem;
-    background-repeat: no-repeat;
     flex-grow: 1;
 }
-
-.logo-img {
-    width: 11.5rem;
-    margin-bottom: 1.5rem;
+#conteudo__logo-adopet {
+    width: 12rem;
+    margin-bottom: 1rem;
 }
-
-.paragrafo {
-    margin: 1rem 3.5rem 1.5rem 3.5rem;
+.conteudo__boas-vindas {
+    font-size: 22px;
 }
-
-.botoes {
+.conteudo__paragrafo {
+    margin: 1rem 4rem 2rem 4rem;
+    font-size: 14px;
+    font-weight: 100;
+}
+.conteudo__botoes {
     display: flex;
     flex-direction: column;
     width: 12rem;
     margin: 0 auto 0 auto;
 }
-
-.botoes__btn {
+.conteudo__botoes--btn {
     margin-bottom: 1rem;
     background-color: var(--coral);
     padding: 0.5rem;
     border-radius: 6px;
     color: var(--branco);
-    font-weight: 600;
 }
 
 /*--------------- TABLET ---------------*/
 
-@media screen and (max-width: 1439px) and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     body {
-        background-size: 35rem, 7.5rem;
+        background-size: 35rem, 7.5rem, 22rem;
+    }
+    .cabecalho__item--logo {
+        display: block;
     }
 
-    main {
-        background-size: 21rem;
-        background-position-y: 32rem;
+    #conteudo__logo-adopet {
+        width: 15rem;
+        margin: 10rem auto 2rem auto;
     }
 
-    .logo-img {
-        width: 16rem;
-        margin-top: 5.5rem;
-        margin-bottom: 2.5rem;
-    }
-
-    h3 {
-        font-style: normal;
-        font-weight: 500;
+    .conteudo__boas-vindas {
         font-size: 28px;
-        line-height: 48px;
-        margin-bottom: 1.5rem;
     }
-
-    .paragrafo {
-        width: 20rem;
-        margin: 0 auto 2.3rem auto;
-        font-style: normal;
-        font-weight: 400;
+    .conteudo__paragrafo {
+        margin: 2rem 14rem 2rem 14rem;
         font-size: 18px;
-        line-height: 26px
+        font-weight: 100;
+        line-height: 26px;
     }
-    .botoes {
-        display: flex;
-        flex-direction: column;
-        width: 21.5rem;
-        margin: 0 auto 1rem auto;
+    .conteudo__botoes {
+        width: 21rem;
+        margin: 0 auto 0 auto;
     }
 
 }
 
-/*--------------- DESKTOP ---------------*/
+/*--------------- TELA PEQUENA ---------------*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+    body {
+        background-size: 30rem, 6rem, 15rem;
+    }
+    .cabecalho__item--logo {
+        display: block;
+    }
+    main {
+        margin: 0 auto 0 auto;
+    }
+
+    #conteudo__logo-adopet {
+        width: 12rem;
+        margin: 4rem auto 1rem auto;
+    }
+
+    .conteudo__boas-vindas {
+        font-size: 25px;
+    }
+    .conteudo__paragrafo {
+        margin: 1rem 15rem 1.5rem 15rem;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .conteudo__botoes {
+        width: 16rem;
+        margin: 0 auto 0 auto;
+    }
+
+}
+
+/*--------------- TELA GRANDE ---------------*/
 
 @media screen and (min-width: 1440px) {
     body {
-        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
-    background-position: top left, center right;
-    background-repeat: no-repeat;
-    background-size: 35rem, 7.5rem;
-
+        background-size: 35rem, 7.5rem, 22rem;
     }
-
+    .cabecalho__item--logo {
+        display: block;
+    }
     main {
-        background-size: 21rem;
-        background-position-y: 15rem;
+        margin: 1rem auto 0 auto;
     }
-    .logo-img {
-        width: 16rem;
-        margin-bottom: 2rem;
+
+    #conteudo__logo-adopet {
+        width: 15rem;
+        margin: 10rem auto 2rem auto;
     }
-    .botoes {
-        display: flex;
-        flex-direction: column;
-        width: 22.5rem;
-        margin: 1rem auto 1rem auto;
+
+    .conteudo__boas-vindas {
+        font-size: 28px;
+    }
+    .conteudo__paragrafo {
+        margin: 2rem 14rem 2rem 14rem;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 26px;
+    }
+    .conteudo__botoes {
+        width: 21rem;
+        margin: 0 auto 0 auto;
     }
 
 }
