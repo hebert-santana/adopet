@@ -4,21 +4,21 @@ body {
     background-position: top right, top left;
     background-repeat: no-repeat;
 
-    display:flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 main {
-    margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
-    text-align: center;             /*terminou de centralizar o conteúdo */
+    margin: 6.5rem auto 0 auto;
+    /* margem esquerda e direita auto */
+    text-align: center;
+    /*terminou de centralizar o conteúdo */
     color: var(--azul);
-
     background-image: url(../img/vetor-3.svg);
     background-size: 20%;
     background-position: center left;
     background-repeat: no-repeat;
-
     flex-grow: 1;
 }
 
@@ -72,20 +72,94 @@ input[type=submit] {
     font-weight: 600;
 }
 
-
-
-/* .remember {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    text-decoration: underline;
-    color: var(--coral);
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 400;
-
-} */
-
 .senha-cadastrado {
     margin-bottom: 0.5rem;
+}
+
+/*--------------- TABLET ---------------*/
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+    body {
+        background-size: 12rem, 35rem;
+        background-position: top right, top left;
+    }
+
+    main {
+        background-image: url(../img/vetor-2.svg);
+        background-size: 7.5rem;
+        background-position: center right;
+    }
+
+    .logo-img {
+        width: 16rem;
+        margin-top: 5.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .paragrafo {
+        margin: 0 7.8rem;
+        font-style: normal;
+        font-size: 18px;
+    }
+
+    form {
+        margin: 2.5rem 13.25rem 0;
+    }
+
+    label {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    input {
+        width: 21.5rem;
+        font-size: 14px;
+    }
+
+    input[type=submit] {
+        width: 10.2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url(../img/patas.svg), url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+    background-position: top right, top left, center right;
+    background-repeat: no-repeat;
+    background-size: 12rem, 35rem, 7.5rem;
+
+    }
+    main {
+        background-image:none;
+    }
+    .logo-img {
+        width: 18rem;
+        margin: 0 auto 3rem;
+    }
+
+    .paragrafo {
+        margin: 0 auto 0;
+        font-style: normal;
+        font-size: 18px;
+    }
+    form {
+        margin: 3rem 28rem 0;
+    }
+    label {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    input {
+        width: 34.5rem;
+        font-size: 14px;
+    }
+    input[type=submit] {
+        margin: 1rem auto 2rem;
+        width: 11rem;
+        display: inline-block;
+
+    }
+
+   
 }

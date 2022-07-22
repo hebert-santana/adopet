@@ -112,3 +112,66 @@ input[type=submit] {
 .rodape__texto {
     align-self: center;
 }
+
+.foto-perfil {
+    width: 5rem;
+    background-color: var(--cinza-bg);
+}
+
+/*--------------- TABLET ---------------*/
+
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+    body {
+        background-size: 35rem;
+        background-position: top left;
+    }
+
+    main {
+        background-image: url(../img/vetor-2.svg);
+        background-size: 7.5rem;
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+
+    .paragrafo {
+        margin: 5rem 7.2rem 2.5rem;
+        font-size: 18px;
+    }
+
+    .formulario {
+        margin: 0rem 7.2rem 5.5rem;
+    }
+
+    input[type=submit] {
+        width: 10.25rem;
+    }
+
+    #foto--perfil {
+        width: 7rem;
+    }
+}
+
+/*--------------- DESKTOP ---------------*/
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: var(--branco);
+        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+        background-position: top left, center right;
+        background-repeat: no-repeat;
+        background-size: 35rem, 8.5rem;
+
+    }
+    .paragrafo {
+        margin: 0 27rem;
+        font-size: 18px;
+
+    }
+    .formulario {
+        margin: 2rem 27rem 2rem;
+    }
+    #foto--perfil {
+        width: 7rem;
+    }
+
+}

@@ -47,4 +47,73 @@ main {
     font-weight: 600;
 }
 
+/*--------------- TABLET ---------------*/
 
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+    body {
+        background-size: 35rem, 7.5rem;
+    }
+
+    main {
+        background-size: 21rem;
+        background-position-y: 32rem;
+    }
+
+    .logo-img {
+        width: 16rem;
+        margin-top: 5.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 48px;
+        margin-bottom: 1.5rem;
+    }
+
+    .paragrafo {
+        width: 20rem;
+        margin: 0 auto 2.3rem auto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px
+    }
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        width: 21.5rem;
+        margin: 0 auto 1rem auto;
+    }
+
+}
+
+/*--------------- DESKTOP ---------------*/
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+    background-position: top left, center right;
+    background-repeat: no-repeat;
+    background-size: 35rem, 7.5rem;
+
+    }
+
+    main {
+        background-size: 21rem;
+        background-position-y: 15rem;
+    }
+    .logo-img {
+        width: 16rem;
+        margin-bottom: 2rem;
+    }
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        width: 22.5rem;
+        margin: 1rem auto 1rem auto;
+    }
+
+}

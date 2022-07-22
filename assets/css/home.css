@@ -122,3 +122,64 @@ span {
     margin-left: 0.45rem;
     color: var(--cinza);
 }
+
+/*--------------- TABLET ---------------*/
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+    body {
+        background-size: 35rem;
+        background-position: top left;
+    }
+    .me-da-um-ola {
+        display: flex;
+        margin: 6rem 12.5rem 0;
+
+    }
+    .ola {
+        font-size: 18px;    
+        margin: 6.5rem auto 0 auto;
+        text-align: center;
+    }
+    .pets {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 1rem 0 2rem 0;
+    }
+    .pets__pet {
+        display: flex;
+        margin: 2rem auto 0;
+        width: 21rem;
+    }
+}
+
+/*--------------- DESKTOP ---------------*/
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: var(--branco);
+        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+        background-position: top left, center right;
+        background-repeat: no-repeat;
+        background-size: 35rem, 8.5rem;
+
+    }
+    .me-da-um-ola {
+        display: flex;
+        margin: 3rem 12.5rem 0;
+
+    }
+    .ola {
+        font-size: 18px;    
+        margin: 6.5rem auto 0 auto;
+        text-align: center;
+    }
+    .pets {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 1rem 10rem 3rem;
+    }
+    .pets__pet {
+        display: flex;
+        margin: 1rem 1rem 0;
+        width: 21.5rem;
+    }
+}
