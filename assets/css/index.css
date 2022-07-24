@@ -1,41 +1,53 @@
 body {
     background-color: var(--azul);
     background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg), url(../img/ilustracao-catdog.svg);
-    background-size: 20rem, 4rem, 12rem;
+    background-size: 20rem, 4rem, 11rem;
     background-position: top left, center right, bottom center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 .cabecalho__item--logo {
     display: none;
 }
+
 main {
+    flex-grow: 1;
+}
+
+.conteudo {
     margin: 3rem auto 0 auto;
     text-align: center;
     color: var(--branco);
-    flex-grow: 1;
 }
+
 #conteudo__logo-adopet {
     width: 10rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
+
 .conteudo__boas-vindas {
-    font-size: 20px;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 500;
 }
+
 .conteudo__paragrafo {
-    margin: 1rem 3.5rem 1rem 3.5rem;
-    font-size: 14px;
+    margin: 1rem 4rem 1rem 4rem;
+    font-size: .8rem;
     font-weight: 100;
 }
+
 .conteudo__botoes {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: .8rem;
     width: 10rem;
     margin: 0 auto 0 auto;
 }
+
 .conteudo__botoes--btn {
     margin-bottom: 1rem;
     background-color: var(--coral);
@@ -46,66 +58,87 @@ main {
 
 /*--------------- TABLET ---------------*/
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) {
     body {
         background-size: 35rem, 7.5rem, 22rem;
     }
     .cabecalho__item--logo {
         display: block;
     }
-
     #conteudo__logo-adopet {
-        width: 15rem;
+        width: 20rem;
         margin: 10rem auto 2rem auto;
     }
-
     .conteudo__boas-vindas {
-        font-size: 28px;
+        font-size: 2.5rem;
     }
     .conteudo__paragrafo {
         margin: 2rem 14rem 2rem 14rem;
-        font-size: 18px;
-        font-weight: 100;
-        line-height: 26px;
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
     .conteudo__botoes {
-        width: 21rem;
+        font-size: 1.4rem;
+        width: 25rem;
         margin: 0 auto 0 auto;
     }
-
+    .conteudo__botoes--btn {
+        padding: 0.5rem;        
+    }
 }
 
 /*--------------- TELA PEQUENA ---------------*/
 
-@media screen and (min-width: 769px) and (max-width: 1024px)  {
+@media screen and (min-width: 769px) {
     body {
         background-size: 30rem, 6rem, 15rem;
     }
     .cabecalho__item--logo {
         display: block;
     }
-    main {
-        margin: 0 auto 0 auto;
-    }
-
     #conteudo__logo-adopet {
-        width: 12rem;
-        margin: 4rem auto 1rem auto;
+        width: 15rem;
+        margin: 2rem auto 1rem auto;
     }
-
     .conteudo__boas-vindas {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
     .conteudo__paragrafo {
-        margin: 1rem 15rem 1.5rem 15rem;
-        font-size: 16px;
-        line-height: 26px;
+        margin: 1rem auto 1.5rem auto;
+        font-size: 1rem;
     }
     .conteudo__botoes {
+        font-size: 1.2rem;
         width: 16rem;
         margin: 0 auto 0 auto;
     }
+}
 
+/*--------------- MINHA TELA (NOTEBOOK) ---------------*/
+
+@media screen and (min-width: 1100px) {
+    body {
+        background-size: 30rem, 5rem, 11.5rem;
+    }
+    .cabecalho__item--logo {
+        display: block;
+    }
+    #conteudo__logo-adopet {
+        width: 12rem;
+        margin: -1rem auto 1rem auto;
+    }
+    .conteudo__boas-vindas {
+        font-size: 1.5rem;
+    }
+    .conteudo__paragrafo {
+        margin: 1rem auto 1rem auto;
+        font-size: 1rem;
+    }
+    .conteudo__botoes {
+        font-size: 1rem;
+        width: 12rem;
+        margin: 0 auto 0 auto;
+    }
 }
 
 /*--------------- TELA GRANDE ---------------*/
@@ -120,24 +153,32 @@ main {
     main {
         margin: 1rem auto 0 auto;
     }
-
     #conteudo__logo-adopet {
-        width: 15rem;
-        margin: 10rem auto 2rem auto;
+        width: 20rem;
+        margin: 4rem auto 2rem auto;
     }
-
     .conteudo__boas-vindas {
-        font-size: 28px;
+        font-size: 2rem;
     }
     .conteudo__paragrafo {
         margin: 2rem 14rem 2rem 14rem;
-        font-size: 18px;
-        font-weight: 100;
-        line-height: 26px;
+        font-size: 1.2rem;
     }
     .conteudo__botoes {
+        font-size: 1.2rem;
         width: 21rem;
         margin: 0 auto 0 auto;
     }
+}
 
+/*--------------- MINHA TELA (DESKTOP) ---------------*/
+
+@media screen and (min-width: 1700px) {
+    body {
+        background-size: 35rem, 7.5rem, 20rem;
+    }
+    #conteudo__logo-adopet {
+        width: 20rem;
+        margin: 0 auto 2rem auto;
+    }
 }

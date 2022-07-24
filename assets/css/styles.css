@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;500;600&display=swap');
+@import url(./index.css);
+@import url(./components/header.css);
+@import url(./components/footer.css);
 
 :root {
     --azul: #3772FF;
@@ -27,29 +30,4 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-}
-
-h1 {
-    font-size: 68px;
-    line-height: 72px;
-}
-
-h2 {
-    font-size: 42px;
-    line-height: 48px;
-}
-
-h3 {
-    font-family: var(--font-secundaria);
-    font-size: 26px;
-    line-height: 48px;
-    font-weight: 300; /* achei mais parecido visualmente do que usando 500 */
-}
-
-h4 {
-    font-weight: 600;
-}
-
-p {
-    font-weight: 400;
 }

@@ -4,9 +4,5 @@
     background-color: var(--verde);
     color: var(--branco);
     justify-content: center;
+    align-items: center;    
 }
-
-.rodape__texto {
-    align-self: center;
-}
-

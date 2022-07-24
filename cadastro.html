@@ -15,6 +15,9 @@
 <body>
     <header>
         <nav class="cabecalho">
+            <a href="#" class="cabecalho__item cabecalho__item--logo">
+                <img src="./assets/img/nav-logo.svg" alt="Logo Page">
+            </a>
             <a href="#" class="cabecalho__item">
                 <img src="./assets/img/home.svg" alt="Home Page">
             </a>
@@ -25,24 +28,24 @@
     </header>
     <!-- CONTEÚDO -->
     <main>
-        <div>
-            <img src="./assets/img/logo-azul.svg" alt="Logo da Adopet" class="logo-img">
-            <p class="paragrafo">Ainda não tem cadastro?</p>
-            <p class="paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
-            <form action="#">
+        <div class="conteudo">
+            <img id="conteudo__logo-adopet" src="./assets/img/logo-azul.svg" alt="Logo da Adopet">
+            <p class="conteudo__paragrafo">Ainda não tem cadastro?</p>
+            <p class="conteudo__paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            <form class="conteudo__formulario" action="#">
                 <label for="email">Email</label>
-                <input type="email" class="caixa email" name="email" placeholder="Escolha seu melhor email">
+                <input type="email" class="conteudo__formulario--caixa conteudo__formulario--email" name="email" placeholder="Escolha seu melhor email">
             
                 <label for="nome">Nome</label>
-                <input type="text" class="caixa nome" name="nome" placeholder="Digite seu nome completo">
+                <input type="text" class="conteudo__formulario--caixa conteudo__formulario--nome" name="nome" placeholder="Digite seu nome completo">
             
                 <label for="senha">Senha</label>
-                <input type="password" class="caixa senha" name="senha" value="secret" placeholder="Crie uma senha">
+                <input type="password" class="conteudo__formulario--caixa conteudo__formulario--senha" name="senha" value="secret" placeholder="Crie uma senha">
 
                 <label for="senha-confirme">Confirma sua senha</label>
-                <input type="password" class="caixa senha" name="senha-confirme" value="secret" placeholder="Repita a senha criada acima">
+                <input type="password" class="conteudo__formulario--caixa conteudo__formulario--senha" name="senha-confirme" value="secret" placeholder="Repita a senha criada acima">
 
-                <input class="cadastrar" type="submit" value="Cadastrar">
+                <input class="conteudo__formulario--cadastrar" type="submit" value="Cadastrar">
             </form>
         </div>
     </main>
