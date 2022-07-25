@@ -7,3 +7,11 @@
     align-items: center;
     min-width: none;
 }
+
+.rodape a {
+    color:antiquewhite
+}
+
+.rodape a:hover {
+    color: var(--azul);
+}
