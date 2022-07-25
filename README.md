@@ -1,6 +1,6 @@
 <div align='center'>
 
-![](./assets/img/logo-azul.svg)
+[<img src="./assets/img/logo-azul.svg" width=200px><br><sub>AdoPet</sub>](https://hebert-santana.github.io/alura-adopet/)
 
 
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
