@@ -4,78 +4,100 @@ body {
     background-position: top left;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.ola {
-    line-height: 20px;
+.cabecalho {
+    margin: 3rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__item {
+    margin: auto 2rem auto 0;
+}
+
+.cabecalho__esquerda {
+    margin: auto 3rem auto 3rem;
+    display: flex;
+}
+
+.cabecalho__item-img {
+    width: 2.3rem;
+}
+
+.cabecalho__item--logo {
+    display: none;
+}
+
+.conteudo__paragrafo {
+    display: flex;
+    line-height: 1.2rem;
     font-weight: 400;
     color: var(--azul);
-
-    display: flex;
-    margin: 4.5rem 4rem 0;
+    margin: 4.5rem 4rem 2rem;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
-.pets__pet {
+.conteudo__pets--pet {
     display: flex;
     margin-top: 1rem;
     width: 100%;
     height: 12.25rem;
-    background-color: var(--cinza-bg);
+    background-color: transparent;
 }
 
-.pets__pet-pet {
+.conteudo__pets--pet-pet {
     width: 50%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 9rem;
 }
 
-.pets__pet-dunga {
+.conteudo__pets--pet-dunga {
     background-image: url(../img/pets/dunga.svg);
 }
 
-.pets__pet-felicia {
+.conteudo__pets--pet-felicia {
     background-image: url(../img/pets/felicia.svg);
 }
 
-.pets__pet-sirius {
+.conteudo__pets--pet-sirius {
     background-image: url(../img/pets/sirius.svg);
 }
 
-.pets__pet-fiona {
+.conteudo__pets--pet-fiona {
     background-image: url(../img/pets/fiona.svg);
 }
 
-.pets__pet-sid {
+.conteudo__pets--pet-sid {
     background-image: url(../img/pets/sid.svg);
 }
 
-.pets__pet-yoda {
+.conteudo__pets--pet-yoda {
     background-image: url(../img/pets/yoda.svg);
 }
 
-.pets__pet-lua {
+.conteudo__pets--pet-lua {
     background-image: url(../img/pets/lua.svg);
 }
 
-.pets__pet-amora {
+.conteudo__pets--pet-amora {
     background-image: url(../img/pets/amora.svg);
 }
 
-.pets__pet-zelda {
+.conteudo__pets--pet-zelda {
     background-image: url(../img/pets/zelda.svg);
 }
 
-.pets__pet-drescricao {
+.conteudo__pets--pet-drescricao {
     display: flex;
     flex-direction: column;
 }
 
-.pets__pet-drescricao h1 {
+.conteudo__pets--pet-drescricao h1 {
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -86,7 +108,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.pets__pet-drescricao ul {
+.conteudo__pets--pet-drescricao ul {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -96,7 +118,7 @@ body {
     color: var(--cinza);
 }
 
-.pets__pet-drescricao p {
+.conteudo__pets--pet-drescricao p {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -106,10 +128,11 @@ body {
     color: var(--cinza);
 }
 
-.pets__pet-drescricao img {
+.conteudo__pets--pet-drescricao img {
     width: 1rem;
 }
-.pets__pet-drescricao a {
+
+.conteudo__pets--pet-drescricao a {
     display: flex;
     font-size: 10px;
     font-weight: 400;
@@ -124,62 +147,112 @@ span {
 }
 
 /*--------------- TABLET ---------------*/
-@media screen and (max-width: 1439px) and (min-width: 768px) {
+@media (min-width: 480px) {
     body {
         background-size: 35rem;
         background-position: top left;
     }
-    .me-da-um-ola {
-        display: flex;
-        margin: 6rem 12.5rem 0;
 
+    .cabecalho {
+        margin: 5rem 0 0;
     }
-    .ola {
-        font-size: 18px;    
-        margin: 6.5rem auto 0 auto;
-        text-align: center;
+
+    .cabecalho__item--logo {
+        display: block;
     }
-    .pets {
+
+    .cabecalho__item {
+        margin: auto 5rem auto 0;
+    }
+
+    .cabecalho__item-img {
+        width: 3rem;
+    }
+
+    .conteudo__paragrafo {
+        display: flex;
+        justify-content: center;
+        margin: 13rem auto 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .conteudo__pets {
         display: grid;
         grid-template-columns: auto auto;
         margin: 1rem 0 2rem 0;
     }
-    .pets__pet {
+
+    .conteudo__pets--pet {
         display: flex;
-        margin: 2rem auto 0;
+        margin: 2.6rem auto 0;
         width: 21rem;
+        background-color: var(--cinza-bg);
     }
 }
 
-/*--------------- DESKTOP ---------------*/
+/*--------------- TELA PEQUENA ---------------*/
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 770px) {
     body {
         background-color: var(--branco);
-        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
-        background-position: top left, center right;
+        background-image: url(../img/vetor-1.svg);
+        background-position: top left;
         background-repeat: no-repeat;
-        background-size: 35rem, 8.5rem;
+        background-size: 35rem;
+    }
 
-    }
-    .me-da-um-ola {
-        display: flex;
-        margin: 3rem 12.5rem 0;
-
-    }
-    .ola {
-        font-size: 18px;    
-        margin: 6.5rem auto 0 auto;
-        text-align: center;
-    }
-    .pets {
-        display: grid;
+    .conteudo__pets {
         grid-template-columns: auto auto auto;
-        margin: 1rem 10rem 3rem;
+        margin: 1rem 0 2rem 0;
+        gap: 0.2rem;
     }
-    .pets__pet {
+
+    .conteudo__pets--pet {
         display: flex;
         margin: 1rem 1rem 0;
-        width: 21.5rem;
+        width: 90%;
+        height: 12.25rem;
+    }
+
+    .conteudo__pets--pet-pet {
+        width: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 9rem;
     }
 }
+
+/*--------------- MINHA TELA (NOTEBOOK) ---------------*/
+
+
+@media screen and (min-width: 1100px) {}
+
+/*--------------- TELA GRANDE ---------------*/
+
+@media (min-width: 1440px) {
+    .cabecalho__item-img {
+        width: 5rem;
+    }
+
+    .conteudo__paragrafo {
+        margin: 2.5rem 4rem 2rem;
+        text-align: center;
+    }
+
+    .conteudo__pets {
+        margin: 1rem 4rem 2rem;
+        gap: 0.2rem;
+    }
+
+    .conteudo__pets--pet {
+        display: flex;
+        margin: 1rem auto 0;
+        width: 95%;
+        height: 12.25rem;
+    }
+}
+
+/*--------------- MINHA TELA (DESKTOP) ---------------*/
+
+@media screen and (min-width: 1700px) {}

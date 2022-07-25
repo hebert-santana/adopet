@@ -1,8 +1,8 @@
 body {
     background-color: var(--azul);
-    background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg), url(../img/ilustracao-catdog.svg);
-    background-size: 20rem, 4rem, 11rem;
-    background-position: top left, center right, bottom center;
+    background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+    background-size: 20rem, 3.8rem;
+    background-position: top left, center right;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -18,24 +18,24 @@ main {
 }
 
 .conteudo {
-    margin: 3rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     text-align: center;
     color: var(--branco);
 }
 
 #conteudo__logo-adopet {
-    width: 10rem;
-    margin-bottom: 1.5rem;
+    width: 9rem;
+    margin: 1.5rem auto .8rem auto
 }
 
 .conteudo__boas-vindas {
     font-family: var(--font-secundaria);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 .conteudo__paragrafo {
-    margin: 1rem 4rem 1rem 4rem;
+    margin: .8rem 3.2rem 1rem;
     font-size: .8rem;
     font-weight: 100;
 }
@@ -44,69 +44,102 @@ main {
     display: flex;
     flex-direction: column;
     font-size: .8rem;
-    width: 10rem;
+    width: 9rem;
     margin: 0 auto 0 auto;
 }
 
 .conteudo__botoes--btn {
     margin-bottom: 1rem;
+    font-size: 0.8rem;
     background-color: var(--coral);
     padding: 0.2rem;
     border-radius: 6px;
     color: var(--branco);
 }
 
+.ilustracao {
+    background-color: transparent;
+    display: flex;
+    height: 200px;
+    background-image: url(../img/ilustracao-catdog.svg);
+    background-size: 11rem;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-position-y: 7px;
+
+}
+
 /*--------------- TABLET ---------------*/
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
     body {
-        background-size: 35rem, 7.5rem, 22rem;
+        background-size: 35rem, 7.5rem;
     }
+
     .cabecalho__item--logo {
         display: block;
     }
+
     #conteudo__logo-adopet {
         width: 20rem;
         margin: 10rem auto 2rem auto;
     }
+
     .conteudo__boas-vindas {
         font-size: 2.5rem;
     }
+
     .conteudo__paragrafo {
-        margin: 2rem 14rem 2rem 14rem;
+        margin: 2rem 14rem 2rem;
         font-size: 1.4rem;
         line-height: 2rem;
     }
+
     .conteudo__botoes {
         font-size: 1.4rem;
         width: 25rem;
         margin: 0 auto 0 auto;
     }
+
     .conteudo__botoes--btn {
-        padding: 0.5rem;        
+        padding: 0.5rem;
+        font-size: 1rem;
     }
+
+    .ilustracao {
+        height: 380px;
+        background-image: url(../img/ilustracao-catdog.svg);
+        background-size: 20rem;
+
+    }
+
 }
 
 /*--------------- TELA PEQUENA ---------------*/
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
     body {
         background-size: 30rem, 6rem, 15rem;
     }
+
     .cabecalho__item--logo {
         display: block;
     }
+
     #conteudo__logo-adopet {
         width: 15rem;
-        margin: 2rem auto 1rem auto;
+        margin: 2.5rem auto 1rem auto;
     }
+
     .conteudo__boas-vindas {
         font-size: 1.5rem;
     }
+
     .conteudo__paragrafo {
         margin: 1rem auto 1.5rem auto;
         font-size: 1rem;
     }
+
     .conteudo__botoes {
         font-size: 1.2rem;
         width: 16rem;
@@ -120,20 +153,25 @@ main {
     body {
         background-size: 30rem, 5rem, 11.5rem;
     }
+
     .cabecalho__item--logo {
         display: block;
     }
+
     #conteudo__logo-adopet {
         width: 12rem;
         margin: -1rem auto 1rem auto;
     }
+
     .conteudo__boas-vindas {
         font-size: 1.5rem;
     }
+
     .conteudo__paragrafo {
         margin: 1rem auto 1rem auto;
         font-size: 1rem;
     }
+
     .conteudo__botoes {
         font-size: 1rem;
         width: 12rem;
@@ -147,23 +185,29 @@ main {
     body {
         background-size: 35rem, 7.5rem, 22rem;
     }
+
     .cabecalho__item--logo {
         display: block;
     }
+
     main {
         margin: 1rem auto 0 auto;
     }
+
     #conteudo__logo-adopet {
         width: 20rem;
         margin: 4rem auto 2rem auto;
     }
+
     .conteudo__boas-vindas {
         font-size: 2rem;
     }
+
     .conteudo__paragrafo {
         margin: 2rem 14rem 2rem 14rem;
         font-size: 1.2rem;
     }
+
     .conteudo__botoes {
         font-size: 1.2rem;
         width: 21rem;
@@ -177,6 +221,7 @@ main {
     body {
         background-size: 35rem, 7.5rem, 20rem;
     }
+
     #conteudo__logo-adopet {
         width: 20rem;
         margin: 0 auto 2rem auto;

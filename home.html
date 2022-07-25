@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/home.css">
-    <!-- COMPONENTS -->
-    <link rel="stylesheet" href="./assets/css/components/header-dois.css">
-    <link rel="stylesheet" href="./assets/css/components/footer.css">
     <title>Adopet | Home</title>
 </head>
 
 <body>
     <header>
-        <nav class="cabecalho">
-            <div class="esquerda"> <a href="./home-bemvindo.html" class="cabecalho__item">
+        <nav class="cabecalho" id="cabecalho">
+            <div class="cabecalho__esquerda">
+                <a href="#" class="cabecalho__item cabecalho__item--logo">
+                    <img src="./assets/img/nav-logo.svg" alt="Logo Page">
+                </a>
+                <a href="./home-bemvindo.html" class="cabecalho__item">
                     <img src="./assets/img/home.svg" alt="Home Page">
                 </a>
                 <a href="./mensagem.html" class="cabecalho__item">
                     <img src="./assets/img/contato.svg" alt="Contato Page">
                 </a>
             </div>
-            <div class="direita">
+            <div class="cabecalho__direita">
                 <a href="perfil.html" class="cabecalho__item">
                     <img class="cabecalho__item-img" src="./assets/img/meu-usuario.png" alt="meu perfil">
                 </a>
@@ -31,141 +33,154 @@
     </header>
     <!-- CONTEÚDO -->
     <main>
-        <div class="me-da-um-ola">
-           <p class="ola">Olá! Veja os amigos disponíveis para adoção!</p>            
-        </div>
-        <div class="pets">
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-dunga">
-                </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Dunga</h1>
-                    <ul>
-                        <li>2 anos</li>
-                        <li>Porte pequeno</li>
-                        <li>Calmo e educado</li>
-                    </ul>
-                    <p>Rio de Janeiro (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
-                </div>
+        <div class="conteudo">
+            <div class="conteudo__paragrafo">
+                <p>Olá! Veja os amigos disponíveis para adoção!</p>
             </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-felicia">
+
+            <div class="conteudo__pets">
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-dunga">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Dunga</h1>
+                        <ul>
+                            <li>2 anos</li>
+                            <li>Porte pequeno</li>
+                            <li>Calmo e educado</li>
+                        </ul>
+                        <p>Rio de Janeiro (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Felícia</h1>
-                    <ul>
-                        <li>3 meses</li>
-                        <li>Porte pequeno</li>
-                        <li>Ativa e carinhosa</li>
-                    </ul>
-                    <p>Nova Iguaçu (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-felicia">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Felícia</h1>
+                        <ul>
+                            <li>3 meses</li>
+                            <li>Porte pequeno</li>
+                            <li>Ativa e carinhosa</li>
+                        </ul>
+                        <p>Nova Iguaçu (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-sirius">
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-sirius">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Sirius</h1>
+                        <ul>
+                            <li>6 meses</li>
+                            <li>Porte grande</li>
+                            <li>Ativo e educado</li>
+                        </ul>
+                        <p>Duque de Caxias (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Sirius</h1>
-                    <ul>
-                        <li>6 meses</li>
-                        <li>Porte grande</li>
-                        <li>Ativo e educado</li>
-                    </ul>
-                    <p>Duque de Caxias (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-fiona">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Fiona</h1>
+                        <ul>
+                            <li>3 anos</li>
+                            <li>Porte pequeno</li>
+                            <li>Calma e carinhosa</li>
+                        </ul>
+                        <p>São Gonçalo (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-fiona">
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-sid">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Sid</h1>
+                        <ul>
+                            <li>8 meses</li>
+                            <li>Porte média/grande</li>
+                            <li>Brincalhão e amável</li>
+                        </ul>
+                        <p>Rio de Janeiro (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Fiona</h1>
-                    <ul>
-                        <li>3 anos</li>
-                        <li>Porte pequeno</li>
-                        <li>Calma e carinhosa</li>
-                    </ul>
-                    <p>São Gonçalo (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-yoda">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Yoda</h1>
+                        <ul>
+                            <li>1 ano</li>
+                            <li>Porte médio</li>
+                            <li>Ativo e carinhoso</li>
+                        </ul>
+                        <p>Nova Iguaçu (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-sid">
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-lua">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Lua</h1>
+                        <ul>
+                            <li>6 meses</li>
+                            <li>Porte médio</li>
+                            <li>Ativa e carinhosa</li>
+                        </ul>
+                        <p>Duque de Caxias (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Sid</h1>
-                    <ul>
-                        <li>8 meses</li>
-                        <li>Porte média/grande</li>
-                        <li>Brincalhão e amável</li>
-                    </ul>
-                    <p>Rio de Janeiro (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-amora">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Amora</h1>
+                        <ul>
+                            <li>45 dias</li>
+                            <li>Porte Grande</li>
+                            <li>Calma e carinhosa</li>
+                        </ul>
+                        <p>São Gonçalo (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-yoda">
-                </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Yoda</h1>
-                    <ul>
-                        <li>1 ano</li>
-                        <li>Porte médio</li>
-                        <li>Ativo e carinhoso</li>
-                    </ul>
-                    <p>Nova Iguaçu (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
-                </div>
-            </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-lua">
-                </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Lua</h1>
-                    <ul>
-                        <li>6 meses</li>
-                        <li>Porte médio</li>
-                        <li>Ativa e carinhosa</li>
-                    </ul>
-                    <p>Duque de Caxias (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
-                </div>
-            </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-amora">
-                </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Amora</h1>
-                    <ul>
-                        <li>45 dias</li>
-                        <li>Porte Grande</li>
-                        <li>Calma e carinhosa</li>
-                    </ul>
-                    <p>São Gonçalo (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
-                </div>
-            </div>
-            <div class="pets__pet">
-                <div class="pets__pet-pet pets__pet-zelda">
-                </div>
-                <div class="pets__pet-drescricao">
-                    <h1>Zelda</h1>
-                    <ul>
-                        <li>5 meses</li>
-                        <li>Porte médio</li>
-                        <li>Ativa e amável</li>
-                    </ul>
-                    <p>Rio de Janeiro (RJ)</p>
-                    <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar com responsável</span></a>
+                <div class="conteudo__pets--pet">
+                    <div class="conteudo__pets--pet-pet conteudo__pets--pet-zelda">
+                    </div>
+                    <div class="conteudo__pets--pet-drescricao">
+                        <h1>Zelda</h1>
+                        <ul>
+                            <li>5 meses</li>
+                            <li>Porte médio</li>
+                            <li>Ativa e amável</li>
+                        </ul>
+                        <p>Rio de Janeiro (RJ)</p>
+                        <a href="#"><img src="./assets/img/pets/icone-mensagem.svg" alt="ícone de mensagem"><span>Falar
+                                com responsável</span></a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <footer class="rodape">
-        <p class="rodape__texto">2022 - Desenvolvido por Alura.</p>
+        <p>2022 - Desenvolvido por Alura.</p>
     </footer>
 </body>
+
 </html>

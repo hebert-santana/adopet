@@ -3,21 +3,44 @@ body {
     background-image: url(../img/vetor-1.svg);
     background-position: top left;
     background-repeat: no-repeat;
-
-    display:flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
+.cabecalho {
+    margin: 3rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__item {
+    margin: auto 2rem auto 0;
+}
+
+.cabecalho__esquerda {
+    margin: auto 3rem auto 3rem;
+    display: flex;
+}
+
+.cabecalho__item-img {
+    width: 2.3rem;
+}
+
+.cabecalho__item--logo {
+    display: none;
+}
+
 main {
-    margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
-    text-align: center;             /*terminou de centralizar o conteúdo */
+    margin: 5rem auto 0 auto;
+    text-align: center;
     color: var(--azul);
     flex-grow: 1;
 }
 
 .paragrafo {
-    margin: 0 4.12rem;
+    margin: 0 4rem;
 }
 
 .formulario {
@@ -40,7 +63,8 @@ label {
     display: flex;
     color: var(--azul);
     font-family: var(--font-principal);
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 800;
     margin: 1rem 0 0.5rem 0;
 }
 
@@ -53,11 +77,27 @@ input {
     display: inline-block;
     border: none;
     border-radius: 6px;
-
     font-family: var(--font-principal);
-    font-size: 14px;
+    font-size: .8rem;
     line-height: 24px;
     font-weight: 400;
+}
+
+input::placeholder {
+    color: var(--cinza-claro);
+}
+
+#mensagem {
+    width: 100%;
+    min-height: 10.75rem;
+    text-align: left;
+    color: var(--cinza-claro);
+    font-family: var(--font-principal);
+    font-size: .8rem;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0.75rem;
+
 }
 
 input[type=submit] {
@@ -69,72 +109,113 @@ input[type=submit] {
     display: inline-block;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
     font-weight: 600;
-
     margin: 2rem auto 2rem auto;
 }
 
-#mensagem {
-    width: 100%;
-    min-height: 10.75rem;
-    text-align: left;
-    color: var(--cinza);
-    font-family: var(--font-principal);
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    padding: 0.75rem;
-
-}
 
 /*--------------- TABLET ---------------*/
-
-@media screen and (max-width: 1439px) and (min-width: 768px) {
+@media (min-width: 480px) {
     body {
         background-size: 35rem;
-        background-position: top left;
     }
+
     main {
         background-image: url(../img/vetor-2.svg);
-        background-size: 7.5rem;
+        background-size: 6.5rem;
         background-position: center right;
         background-repeat: no-repeat;
     }
+
+    .cabecalho {
+        margin: 5rem 1rem 0 auto;
+    }
+
+    .cabecalho__item {
+        margin: auto 5rem auto 0;
+    }
+
+    .cabecalho__item-img {
+        width: 3rem;
+    }
+
+    .cabecalho__item--logo {
+        display: block;
+    }
+
     .paragrafo {
         margin: 5rem 7.2rem 2.5rem;
         font-size: 18px;
     }
+
     .formulario {
         margin: 0rem 7.2rem 5.5rem;
     }
+
     input[type=submit] {
         width: 10.25rem;
-        
+
     }
 }
 
-/*--------------- DESKTOP ---------------*/
+/*--------------- TELA PEQUENA ---------------*/
 
-@media screen and (min-width: 1440px) {
-    body {
-        background-color: var(--branco);
-        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
-        background-position: top left, center right;
-        background-repeat: no-repeat;
-        background-size: 35rem, 8.5rem;
-
-    }
+@media (min-width: 770px) {
     .paragrafo {
-        margin: 0 27rem;
+        margin: 0 16rem;
         font-size: 18px;
 
     }
+
     .formulario {
-        margin: 2rem 27rem 2rem;
+        margin: 2rem 16rem 2rem;
     }
+
     input[type=submit] {
-        width: 10.25rem;        
+        width: 10.25rem;
     }
 }
+
+
+/*--------------- MINHA TELA (NOTEBOOK) ---------------*/
+
+
+@media screen and (min-width: 1100px) {}
+
+/*--------------- TELA GRANDE ---------------*/
+
+@media (min-width: 1440px) {
+    body {
+
+        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+        background-position: top left, center right;
+        background-size: 35rem, 6.5rem;
+    }
+
+    main {
+        background-image: none;
+    }
+
+    .cabecalho {
+        margin: 5rem 0 0 auto;
+    }
+
+    .cabecalho__item {
+        margin: auto 4rem auto 0;
+    }
+
+    .cabecalho__item-img {
+        width: 3rem;
+        margin-right: 10rem;
+    }
+
+    .cabecalho__item--logo {
+        display: block;
+    }
+
+}
+
+/*--------------- MINHA TELA (DESKTOP) ---------------*/
+
+@media screen and (min-width: 1700px) {}

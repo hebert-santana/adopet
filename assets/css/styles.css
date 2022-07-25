@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;500;600&display=swap');
-@import url(./index.css);
 @import url(./components/header.css);
 @import url(./components/footer.css);
+
 
 :root {
     --azul: #3772FF;

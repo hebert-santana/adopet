@@ -1,0 +1,196 @@
+body {
+    background-color: var(--branco);
+    background-image: url(../img/patas.svg), url(../img/vetor-1.svg);
+    background-position: top right, top left, bottom left;
+    ;
+    background-size: 8rem, 20rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cabecalho__item--logo {
+    display: none;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.conteudo {
+    margin: 3rem auto 0 auto;
+    text-align: center;
+    color: var(--azul);
+}
+
+#conteudo__logo-adopet {
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo__paragrafo {
+    margin: 1rem 1.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.conteudo__formulario {
+    margin: 2rem auto 0;
+}
+
+label {
+    color: var(--cinza);
+    font-family: var(--font-principal);
+}
+
+input {
+    width: 19.5rem;
+    background-color: var(--cinza-bg);
+    text-align: center;
+    color: var(--cinza-claro);
+    padding: 12px 20px;
+    margin: 0.5rem 0 0.5rem;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-principal);
+    font-size: .8rem;
+}
+
+input::placeholder {
+    color: var(--cinza-claro);
+}
+
+.conteudo__formulario--anchor {
+    display: flex;
+    color: var(--coral);
+    font-size: 0.6rem;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+input[type=submit] {
+    width: 9.5rem;
+    margin: 2rem 0 10rem;
+    background-color: var(--coral);
+    text-align: center;
+    color: var(--branco);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/*--------------- TABLET ---------------*/
+
+@media (min-width: 480px) {
+    body {
+        background-image: url(../img/patas.svg), url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+        background-position: top right, top left, center right;
+        background-repeat: no-repeat;
+        background-size: 12rem, 35rem, 7.5rem;
+    }
+
+    .cabecalho__item--logo {
+        display: block;
+    }
+
+    #conteudo__logo-adopet {
+        width: 16rem;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo__paragrafo {
+        margin: 0 7rem 0;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .conteudo__formulario {
+        margin: 2.5rem 12rem 0;
+    }
+
+    label {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 24px;
+    }
+
+    input {
+        width: 25rem;
+        font-size: 1rem;
+    }
+
+    input::placeholder {
+        color: var(--cinza-claro);
+    }
+
+    .conteudo__formulario--anchor {
+        display: none;
+    }
+
+    input[type=submit] {
+        width: 12rem;
+        font-weight: 500;
+    }
+}
+
+/*--------------- TELA PEQUENA ---------------*/
+
+@media (min-width: 770px) {
+    body {
+        background-image: url(../img/patas.svg), url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+        background-size: 10rem, 28rem, 6rem;
+    }
+
+    #conteudo__logo-adopet {
+        width: 15rem;
+        margin: 2rem auto 1rem;
+    }
+
+    .conteudo__paragrafo {
+        margin: 0 auto 0;
+        font-style: normal;
+        font-size: 18px;
+    }
+
+    .conteudo__formulario {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto 0;
+        align-items: center;
+    }
+
+    label {
+        margin: 0 20rem 0;
+        font-weight: 600;
+    }
+
+    input {
+        width: 35rem;
+    }
+
+    input[type=submit] {
+        margin: 1rem 20rem 5rem;
+        width: 11rem;
+    }
+}
+
+/*--------------- MINHA TELA (NOTEBOOK) ---------------*/
+
+
+@media screen and (min-width: 1100px) {
+    body {
+        background-size: 10rem, 28rem, 5rem;
+    }
+}
+
+/*--------------- TELA GRANDE ---------------*/
+
+@media (min-width: 1440px) {}
+
+/*--------------- MINHA TELA (DESKTOP) ---------------*/
+
+@media screen and (min-width: 1700px) {}

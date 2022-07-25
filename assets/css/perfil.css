@@ -3,28 +3,50 @@ body {
     background-image: url(../img/vetor-1.svg);
     background-position: top left;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+.cabecalho {
+    margin: 3rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__item {
+    margin: auto 2rem auto 0;
+}
+
+.cabecalho__esquerda {
+    margin: auto 3rem auto 3rem;
+    display: flex;
+}
+
+.cabecalho__item-img {
+    width: 2.3rem;
+}
+
+.cabecalho__item--logo {
+    display: none;
+}
+
 main {
-    margin: 6.5rem auto 0 auto;
-    /* margem esquerda e direita auto */
+    margin: 5.5rem auto 0 auto;
     text-align: center;
-    /*terminou de centralizar o conteúdo */
     color: var(--azul);
     flex-grow: 1;
 }
 
 .paragrafo {
     margin: 0 3.5rem;
+    line-height: 1.2rem;
 }
 
 .formulario {
     background-color: var(--cinza-bg);
-    margin: 1.5rem 1.5rem 2rem 1.5rem;
+    margin: 1.5rem 1.5rem 2rem;
     text-align: left;
     border-radius: 10px;
     display: flex;
@@ -32,7 +54,8 @@ main {
 }
 
 .perfil {
-    font-size: 21px;
+    margin-top: 1rem;
+   font-size: 1.5rem;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0px;
@@ -40,6 +63,11 @@ main {
     color: var(--cinza);
     text-align: center;
 
+}
+
+.foto-perfil {
+    width: 6rem;
+    background-color: var(--cinza-bg);
 }
 
 form {
@@ -53,7 +81,8 @@ label {
     display: flex;
     color: var(--azul);
     font-family: var(--font-principal);
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
     margin: 1rem 0 0.5rem 0;
 }
 
@@ -66,27 +95,11 @@ input {
     display: inline-block;
     border: none;
     border-radius: 6px;
-
     font-family: var(--font-principal);
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
+    font-size: .8rem;
 }
-
-input[type=submit] {
-    width: 9.5rem;
-    background-color: var(--coral);
-    text-align: center;
-    color: var(--branco);
-    padding: 12px 20px;
-    display: inline-block;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
-
-    margin: 2rem auto 2rem auto;
+input::placeholder {
+    color: var(--cinza);
 }
 
 #mensagem {
@@ -101,29 +114,25 @@ input[type=submit] {
     padding: 0.75rem;
 }
 
-.rodape {
-    display: flex;
-    height: 6.5rem;
-    background-color: var(--verde);
+input[type=submit] {
+    width: 9.5rem;
+    background-color: var(--coral);
+    text-align: center;
     color: var(--branco);
-    justify-content: center;
-}
-
-.rodape__texto {
-    align-self: center;
-}
-
-.foto-perfil {
-    width: 5rem;
-    background-color: var(--cinza-bg);
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 2rem auto 2rem auto;
 }
 
 /*--------------- TABLET ---------------*/
-
-@media screen and (max-width: 1439px) and (min-width: 768px) {
+@media (min-width: 480px) {
     body {
         background-size: 35rem;
-        background-position: top left;
     }
 
     main {
@@ -132,10 +141,36 @@ input[type=submit] {
         background-position: center right;
         background-repeat: no-repeat;
     }
+    
+    #foto--perfil {
+        width: 7rem;
+    }
+    .cabecalho {
+        margin: 3rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .cabecalho {
+        margin: 5rem 1rem 0 auto;
+    }
+
+    .cabecalho__item {
+        margin: auto 5rem auto 0;
+    }
+
+    .cabecalho__item-img {
+        width: 3rem;
+    }
+
+    .cabecalho__item--logo {
+        display: block;
+    }
 
     .paragrafo {
         margin: 5rem 7.2rem 2.5rem;
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     .formulario {
@@ -145,33 +180,57 @@ input[type=submit] {
     input[type=submit] {
         width: 10.25rem;
     }
+}
 
-    #foto--perfil {
-        width: 7rem;
+/*--------------- TELA PEQUENA ---------------*/
+
+@media (min-width: 770px) {
+    .paragrafo {
+        margin: 0 16rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+    }
+
+    .formulario {
+        margin: 2rem 16rem 2rem;
+    }
+
+    input[type=submit] {
+        width: 10.25rem;
     }
 }
 
-/*--------------- DESKTOP ---------------*/
+
+/*--------------- MINHA TELA (NOTEBOOK) ---------------*/
+
+
+@media screen and (min-width: 1100px) {}
+
+/*--------------- TELA GRANDE ---------------*/
 
 @media screen and (min-width: 1440px) {
-    body {
-        background-color: var(--branco);
-        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
-        background-position: top left, center right;
-        background-repeat: no-repeat;
-        background-size: 35rem, 8.5rem;
-
-    }
     .paragrafo {
         margin: 0 27rem;
-        font-size: 18px;
 
     }
     .formulario {
         margin: 2rem 27rem 2rem;
     }
-    #foto--perfil {
-        width: 7rem;
+
+}
+
+/*--------------- MINHA TELA (DESKTOP) ---------------*/
+
+@media screen and (min-width: 1700px) {
+    body {
+
+        background-image: url(../img/vetor-1.svg), url(../img/vetor-2.svg);
+        background-position: top left, center right;
+        background-size: 35rem, 7rem;
     }
 
+    main {
+        background-image: none;
+    }
 }

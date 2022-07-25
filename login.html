@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/cadastro-login.css">
-    <!-- COMPONENTS -->
-    <link rel="stylesheet" href="./assets/css/components/header.css">
-    <link rel="stylesheet" href="./assets/css/components/footer.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
     <title>Adopet | Login</title>
 </head>
 
 <body>
     <header>
         <nav class="cabecalho">
+            <a href="#" class="cabecalho__item cabecalho__item--logo">
+                <img src="./assets/img/nav-logo.svg" alt="Logo Page">
+            </a>
             <a href="#" class="cabecalho__item">
                 <img src="./assets/img/home.svg" alt="Home Page">
             </a>
@@ -25,25 +26,27 @@
     </header>
     <!-- CONTEÚDO -->
     <main>
-        <div>
-            <img src="./assets/img/logo-azul.svg" alt="Logo da Adopet" class="logo-img">
-            <p class="paragrafo">Já tem conta? Faça seu login:</p>
-           
-            <form action="#">
+        <div class="conteudo">
+            <img id="conteudo__logo-adopet" src="./assets/img/logo-azul.svg" alt="Logo da Adopet">
+            <p class="conteudo__paragrafo">Já tem conta? Faça seu login:</p>
+            <form class="conteudo__formulario" action="#">
                 <label for="email">Email</label>
-                <input type="email" class="caixa email" name="email" placeholder="Insira seu email">
-            
-                <label for="senha">Senha</label>
-                <input type="password" class="caixa senha-cadastrado" name="senha" value="secret" placeholder="Insira sua senha">
-                <!-- <a class="remember">Esqueci minha senha.</a> -->
+                <input type="email" class="conteudo__formulario--caixa conteudo__formulario--email" name="email"
+                    placeholder="Insira seu email">
 
-                <input class="entrar" type="submit" value="Entrar">
+                <label for="senha">Senha</label>
+                <input type="password" class="conteudo__formulario--caixa conteudo__formulario--senha" name="senha"
+                    value="secret" placeholder="Insira sua senha">
+                <a class="conteudo__formulario--anchor">Esqueci minha senha</a>
+
+                <input class="conteudo__formulario--entrar" type="submit" value="Entrar">
             </form>
         </div>
     </main>
 
     <footer class="rodape">
-        <p class="rodape__texto">2022 - Desenvolvido por Alura.</p>
+        <p>2022 - Desenvolvido por Alura.</p>
     </footer>
 </body>
+
 </html>
