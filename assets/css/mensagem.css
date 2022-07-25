@@ -188,6 +188,9 @@ input[type=submit] {
         background-position: top left, center right;
         background-size: 35rem, 6.5rem;
     }
+    main {
+        background-image: none;
+    }
 }
 
 /*--------------- TELA GRANDE ---------------*/
