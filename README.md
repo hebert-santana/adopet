@@ -37,6 +37,6 @@ O Desafio começou em 04 de julho de 2022.
 
 ## Autor
 
-[<img src="https://avatars.githubusercontent.com/u/102166830?v=4" width=115><br><sub>Hebert Santana</sub>](https://github.com/hebert-santana)
+[<img src="https://avatars.githubusercontent.com/u/102166830?v=4" width=150><br><sub>Hebert Santana</sub>](https://github.com/hebert-santana)
 
 
