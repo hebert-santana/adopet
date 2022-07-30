@@ -25,8 +25,9 @@ O desafio Front-End fez uma simulação de ambiente de trabalho dos desenvolvedo
 -   **Semana 3 (em andamento):** Funcionalidade de login/logout com armazenamento local (`localStorage`) e definição de rotas protegidas.
 -   **Semana 4 (a iniciar):** Funcionalidade de login/logout no back-end da aplicação.
 
-## Autor
+<hr>
 
-[<img src="https://avatars.githubusercontent.com/u/102166830?v=4" width=150><br><sub>Hebert Santana</sub>](https://github.com/hebert-santana)
+### Autor
+[<img src="https://avatars.githubusercontent.com/u/102166830?v=4" width=80><br><sub>Hebert Santana</sub>](https://github.com/hebert-santana)
 
 
