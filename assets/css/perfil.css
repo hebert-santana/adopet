@@ -65,9 +65,24 @@ main {
 
 }
 
-.foto-perfil {
+/* input[type='file'] {
+    display: none;
+} */
+
+#foto--perfil {
     width: 6rem;
+    height: 6rem;
+    padding: 1px;
     background-color: var(--cinza-bg);
+    border: 1px dotted black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#foto--perfil:hover {
+    background-color: var(--cinza);
+    border: 2px solid var(--azul);
 }
 
 form {

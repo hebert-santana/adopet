@@ -1,0 +1,21 @@
+{
+  "usuarios": [
+    {
+      "nome": "Hebert Santana",
+      "email": "hebert.fsantana@gmail.com",
+      "senha": "123456",
+      "senha-confirme": "123456",
+      "id": 1
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Hambúrgueres"
+    },
+    {
+      "id": 2,
+      "nome": "Refrigerantes"
+    }
+  ]
+}

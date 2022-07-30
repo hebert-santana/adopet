@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/cadastro.css">
+    <title>Adopet | Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a href="../index.html" class="cabecalho__item cabecalho__item--logo"> <img src="../assets/img/nav-logo.svg" alt="Logo Page"> </a>
+            <a href="../index.html" class="cabecalho__item"> <img src="../assets/img/home.svg" alt="Home Page"> </a>
+            <a href="./mensagem.html" class="cabecalho__item"> <img src="../assets/img/contato.svg" alt="Contato Page"> </a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO -->
+    <main>
+        <div class="conteudo">
+            <img id="conteudo__logo-adopet" src="../assets/img/logo-azul.svg" alt="Logo da Adopet">
+            <p class="conteudo__paragrafo">Ainda não tem cadastro?</p>
+            <p class="conteudo__paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            
+            <form class="conteudo__formulario" action="http://localhost:3000/usuarios/" onsubmit="senhaOK()" method="post">
+
+                <label for="nome">Nome</label>
+                <input type="text" class="conteudo__formulario--caixa conteudo__formulario--nome" name="nome" placeholder="Digite seu nome completo" required>
+
+
+                <label for="email">Email</label>
+                <input type="email" class="conteudo__formulario--caixa conteudo__formulario--email" name="email" placeholder="Escolha seu melhor email" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" class="conteudo__formulario--caixa conteudo__formulario--senha" name="senha" placeholder="Crie uma senha" required onchange="confirmaSenha()">
+
+                <label for="senha-confirme">Confirma sua senha</label>
+                <input type="password" id="confirma-senha" class="conteudo__formulario--caixa conteudo__formulario--senha" name="senha-confirme" placeholder="Repita a senha criada acima" required onchange="confirmaSenha()">
+
+                <input class="conteudo__formulario--cadastrar" type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>2022 - Desenvolvido por <a href="https://www.linkedin.com/in/hebert-santana/" target="_blank">Hebert Santana</a></p>
+    </footer>
+    <script src="../assets/js/confirma-senhas.js"></script>
+    <!-- <script src="../assets/js/valida-email.js"></script> -->
+</body>
+
+</html>
